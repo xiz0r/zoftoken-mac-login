@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+
+    <key>Label</key>
+    <string>com.zoftoken.agent.plist</string>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>PATH</key>
+        <string>/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin</string>
+    </dict>
+    
+    <key>StandardErrorPath</key>
+    <string>/Library/Application Support/ZofToken/stderr.log</string>
+
+    <key>StandardOutPath</key>
+    <string>/Library/Application Support/ZofToken/stdout.log</string>
+
+    <key>ProgramArguments</key>
+    <array>
+      <string>/Library/Application Support/ZofToken/main.sh</string>
+    </array>
+
+  </dict>
+</plist>
